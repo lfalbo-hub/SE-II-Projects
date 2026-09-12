@@ -1,0 +1,41 @@
+# Feature: Attendance & Class Administration
+**Feature ID:** 3
+**Branch pattern:** `feature/N-Attendance-Class`
+**Status:** Draft
+**Created:** 2026-09-07
+
+## User Stories
+---
+
+### US-N.1: Attendance Tracking
+**As a** Admin
+**I want to** Mark attendance of members and guests 
+**So that** I can see the rate of returning and new people
+
+### US-N.2: Member attendance
+**As a** Member 
+**I want to** be able to sign in during Bible class and/or Service
+**So that** The church can know I regularly attend
+
+### US-N.3: Guest Access
+**As a** Guest
+**I want to** Enter my information for the church
+**So that** The church can see that I was there and if I want to request more information about the church
+
+## Functional Requirements
+---
+- **FR-001**: System MUST allow guests and members to sign in and show that they attended
+- **FR-002**: System MUST allow admins to mark attendence of members and guests
+- **FR-002**: System MUST allow admins to see data about attendence record and activity
+
+## Gherkin AC
+---
+#### Scenario: Member wants to sign in
+* **Given** A member that needs to sign in
+* **When** The member successfully signs in to mark that they were there
+* **Then** The church can see that they are active in the church
+
+#### Scenario: Admin wants to check attendance
+* **Given** Admin can successfully login to system
+* **When** Admin can see attendance 
+* **Then** members can be marked active or inactive based on attendance and add guests who want to become a member
